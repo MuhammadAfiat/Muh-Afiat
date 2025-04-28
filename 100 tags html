@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lwsutv76j25ocb" alt="Labubu" style="background-color: antiquewhite; border-radius: 209px;">
+<h1 style="color: blue; font-size: 20px;">Hello World</h1>
+<p style="color: green;">selamat datang di welcome!</p>
+<h1 style="text-align: center;">Heading 1 tengah</h1>
+<h2 style="text-align: right;">Heading 2 kanan</h2>
+<h3 style="text-align: left;">Heading 3 kiri</h3>
+<h4 style="background: lightblue;">Heading 4 biru</h4>
+<h5 style="color: green;">Heading 5 hijau</h5>
+<h6 style="color: orange;">Heading 6 oranye</h6>
+
+<a href="#" style="color: blue; text-decoration: none;">Link tanpa garis</a>
+<section style="padding: 20px; background: lightgray;">Section dengan padding</section>
+    <article style="border: 1px solid black;">Article dengan border</article>
+    <aside style="background: lightpink;">Aside dengan background</aside>
+    <main style="margin: 10px;">Main dengan margin</main>
+    <header style="background: darkgray;">Header abu-abu</header>
+    <footer style="text-align: center;">Footer tengah</footer>
+    <blockquote style="font-style: italic;">Ini blockquote</blockquote>
+    <code style="background: #eee;">Kode source</code>
+    <pre style="color: green;">Preformat hijau</pre>
+    <mark style="background: orange;">Teks ditandai</mark>
+
+    <button style="border-radius: 10px;">Tombol Bulat</button>
+    <nav style="display: flex; gap: 5px;">Navigasi flex</nav>
+    <ul style="list-style-type: square;">List unordered kotak</ul>
+    <ol style="list-style-type: upper-roman;">List ordered romawi</ol>
+    <li style="margin-bottom: 5px;">Item list</li>
+    <table style="width: 100%; border-collapse: collapse;"><tr><th style="border: 1px solid;">Header</th></tr><tr><td style="border: 1px solid;">Data</td></tr></table>
+    <tr style="background: #f2f2f2;">Baris tabel</tr>
+    <td style="padding: 10px;">Sel tabel</td>
+    <th style="font-weight: bold;">Kepala tabel</th>
+    <form style="border: 1px solid #ccc; padding: 10px;">Form border</form>
+
+    <input style="padding: 5px; width: 100%;" type="text" placeholder="Input teks">
+    <textarea style="resize: none; width: 100%;">Textarea tanpa resize</textarea>
+    <select style="background: #ddd; width: 100%;"><option>Opsi 1</option></select>
+    <option style="color: purple;">Pilihan ungu</option>
+    <label style="font-size: 14px;">Label kecil</label>
+    <fieldset style="border: 2px dashed gray; padding: 10px;">Fieldset dashed</fieldset>
+    <legend style="font-weight: bold;">Legenda Fieldset</legend>
+    <iframe style="border: none; width: 100%; height: 150px;" src=""></iframe>
+    <video style="width: 100%;" controls>Video</video>
+    <audio style="width: 100%;" controls>Audio</audio>
+
+    <canvas style="border: 1px solid #000; width: 100%;">Canvas kosong</canvas>
+    <details style="cursor: pointer;">
+        <summary style="font-size: 18px;">Klik untuk buka</summary>
+        Konten detail
+    </details>
+    <figure style="margin: 10px;">
+        <img src="https://via.placeholder.com/300x150" style="width: 100%;" alt="Gambar contoh">
+        <figcaption style="text-align: center;">Caption gambar</figcaption>
+    </figure>
+    <progress style="width: 100%;" value="60" max="100">Progress</progress>
+    <meter style="width: 100%; height: 20px;" value="0.7">Meteran</meter>
+    <small style="font-size: 12px;">Teks kecil</small>
+    <time style="color: teal;">Waktu event</time>
+    <abbr style="border-bottom: 1px dotted;">HTML</abbr>
+    <b style="letter-spacing: 2px;">Teks Bold</b>
+    <i style="font-style: italic;">Teks Italic</i>
+
+    <em style="color: brown;">Teks Emphasis</em>
+    <strong style="font-weight: 900;">Teks Strong</strong>
+    <del style="text-decoration: line-through;">Teks Terhapus</del>
+    <ins style="text-decoration: underline;">Teks Disisipkan</ins>
+    <sub style="font-size: 10px;">Subskrip</sub>
+    <sup style="font-size: 10px;">Superskrip</sup>
+    <kbd style="background: #ccc;">Ctrl + S</kbd>
+    <samp style="color: navy;">Output Contoh</samp>
+    <var style="font-style: italic;">Variabel a</var>
+    <bdi style="direction: rtl;">RTL Teks</bdi>
+
+    <bdo style="direction: ltr;">LTR Teks</bdo>
+    <ruby style="font-size: 12px;">文<rt>wen</rt></ruby>
+    <address style="font-style: normal;">Alamat Kantor</address>
+    <noscript style="color: gray;">Javascript nonaktif</noscript>
+    <div style="background: pink;">Div pink</div>
+    <p style="line-height: 2;">Paragraf tinggi</p>
+    <span style="opacity: 0.7;">Span transparan</span>
+    <h2 style="border-bottom: 2px solid red;">H2 bergaris</h2>
+    <h3 style="margin-top: 20px;">H3 margin atas</h3>
+    <h4 style="margin-bottom: 20px;">H4 margin bawah</h4>
+
+    <footer style="position: absolute;">Footer absolute</footer>
+    <nav style="flex-direction: column;">Navigasi kolom</nav>
+    <ul style="padding: 15px;">List padding</ul>
+    <ol style="margin: 15px;">Ordered List margin</ol>
+    <li style="font-weight: 600;">List bold</li>
+    <table style="border-collapse: collapse;"><tr><td style="border: 1px solid;">Data tabel</td></tr></table>
+    <tr style="height: 50px;">Tinggi Baris</tr>
+    <td style="vertical-align: top;">Sel atas</td>
+    <th style="background: gold;">Header emas</th>
+    <form style="display: grid;">Form grid</form>
+
+    <textarea style="height: 120px;">Textarea tinggi</textarea>
+    <select style="width: 200px;"><option>Opsi lebar</option></select>
+    <option style="background: #aaa;">Opsi abu</option>
+    <label style="margin-right: 10px;">Label margin kanan</label>
+    <fieldset style="padding: 10px;">Fieldset padding</fieldset>
+    <legend style="background: #ddd;">Legend background</legend>
+    <iframe style="height: 300px;">Iframe tinggi</iframe>
+    <video style="height: 250px;" controls>Video tinggian</video>
+    <audio style="height: 50px;" controls>Audio custom</audio>
+    <canvas style="height: 200px;">Canvas tinggi</canvas>
+
+    <body> 
+</html>
