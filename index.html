@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edufun - Interactive Learning Platform</title>
+    <style>
+        :root {
+            --primary-blue: #0081C9;
+            --secondary-blue: #5BC0F8;
+            --light-blue: #86E5FF;
+            --sand-color: #FFC93C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(var(--secondary-blue), var(--primary-blue));
+            min-height: 100vh;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 4rem;
+            background-color: var(--primary-blue);
+        }
+
+        .logo {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hero-section {
+            display: flex;
+            padding: 4rem;
+            position: relative;
+            min-height: 70vh;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .start-button {
+            background-color: #004AAD;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .start-button:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 300px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        footer {
+            background-color: var(--primary-blue);
+            padding: 2rem 4rem;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .main-nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero-section {
+                padding: 2rem;
+                flex-direction: column;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-image {
+                position: relative;
+                right: auto;
+                top: auto;
+                transform: none;
+                margin: 2rem auto;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">Edufun</div>
+            <ul class="nav-links">
+                <li><a href="#">Learning</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>Selamat datang<br>di EDUFUN</h1>
+            <p>Jelajahi dunia pembelajaran interaktif yang penuh dengan permainan edukatif, video animasi, dan kuis seru! EduFun hadir untuk membuat anak-anak belajar dengan cara yang lebih menyenangkan dan penuh eksplorasi!</p>
+            <button class="start-button">Start</button>
+        </div>
+        <div class="hero-image">
+            <img src="foto/foto%201.png" alt="Ilustrasi Anak Belajar">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Learning Module</a>
+            <a href="#">Games</a>
+            <a href="#">Parents Dashboard</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="copyright">
+            Copyright © EDUFUN
+        </div>
+    </footer>
+</body>
+</html>
