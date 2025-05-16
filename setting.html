@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edufun - Settings</title>
+    <style>
+        :root {
+            --primary-blue: #4169E1;
+            --nav-blue: #4169E1;
+            --bg-blue: #87CEEB;
+            --deep-blue: #0066CC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg-blue);
+            min-height: 100vh;
+        }
+
+        .nav-container {
+            background-color: var(--nav-blue);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .settings-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .settings-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 3rem;
+        }
+
+        .settings-content {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+        }
+
+        .profile-card {
+            background-color: var(--deep-blue);
+            border-radius: 15px;
+            padding: 2rem;
+            width: 300px;
+            color: white;
+            text-align: center;
+        }
+
+        .profile-icon {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+        }
+
+        .profile-info {
+            margin-top: 1rem;
+        }
+
+        .settings-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .control-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #333;
+        }
+
+        .slider {
+            width: 200px;
+            height: 4px;
+            background: white;
+            border-radius: 2px;
+        }
+
+        .language-select {
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            background: white;
+        }
+
+        .toggle-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .toggle-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-btn.active {
+            background-color: var(--deep-blue);
+            color: white;
+        }
+
+        footer {
+            background-color: var(--nav-blue);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .settings-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-card {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .settings-controls {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+            <img src="edufun-logo.png" alt="Edufun Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Learning</a>
+            <a href="#">Games</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Setting</a>
+        </div>
+    </nav>
+
+    <main class="settings-container">
+        <h1 class="settings-title">Atur pengalaman belajarmu!</h1>
+        
+        <div class="settings-content">
+            <div class="profile-card">
+                <h2>Profile</h2>
+                <div class="profile-icon"></div>
+                <div class="profile-info">
+                    <p>Name: Alif Darmawan</p>
+                    <p>ID 224590750123124</p>
+                </div>
+            </div>
+
+            <div class="settings-controls">
+                <div class="control-item">
+                    <span>🔊</span>
+                    <div class="slider"></div>
+                </div>
+                <div class="control-item">
+                    <span>🎵</span>
+                    <div class="slider"></div>
+                </div>
+                <div class="control-item">
+                    <span>🌐</span>
+                    <select class="language-select">
+                        <option>English</option>
+                    </select>
+                </div>
+                <div class="control-item">
+                    <span>🔔</span>
+                    <div class="toggle-buttons">
+                        <button class="toggle-btn">No</button>
+                        <button class="toggle-btn active">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Learning module</a>
+            <a href="#">Parent Dashboard</a>
+            <a href="#">Games</a>
+            <a href="#">Setting</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

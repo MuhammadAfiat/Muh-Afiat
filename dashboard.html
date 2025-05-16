@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edufun - Dashboard</title>
+    <style>
+        :root {
+            --primary-blue: #4169E1;
+            --nav-blue: #4169E1;
+            --bg-blue: #87CEEB;
+            --deep-blue: #0066CC;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg-blue);
+            min-height: 100vh;
+        }
+
+        .nav-container {
+            background-color: var(--nav-blue);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .dashboard-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .dashboard-title {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+        }
+
+        .progress-table {
+            background-color: var(--deep-blue);
+            border-radius: 15px;
+            padding: 2rem;
+            color: white;
+            width: 100%;
+        }
+
+        .table-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            font-weight: bold;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: var(--nav-blue);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .dashboard-container {
+                padding: 1rem;
+            }
+
+            .dashboard-title {
+                font-size: 2rem;
+            }
+
+            .table-header, .table-row {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+             <img src="foto/Logo.png" alt="Logo Edufun" style="height: 50px;">
+        </div>
+        <div class="nav-links">
+            <a href="#">Learning</a>
+            <a href="#">Games</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Setting</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <h1 class="dashboard-title">Dashboard</h1>
+        <div class="progress-table">
+            <div class="table-header">
+                <div>Overview</div>
+                <div>Progress</div>
+                <div>Study Time</div>
+            </div>
+            <div class="table-row">
+                <div>Math</div>
+                <div>50 %</div>
+                <div>70 mins</div>
+            </div>
+            <div class="table-row">
+                <div>Science</div>
+                <div>10 %</div>
+                <div>20 mins</div>
+            </div>
+            <div class="table-row">
+                <div>Language</div>
+                <div>90 %</div>
+                <div>140 mins</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Learning module</a>
+            <a href="#">Parent Dashboard</a>
+            <a href="#">Games</a>
+            <a href="#">Setting</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
